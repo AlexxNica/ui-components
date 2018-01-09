@@ -53,7 +53,7 @@ describe('<LookupMenu />', () => {
     input.simulate('keyDown', ev);
     expect(menu.state('softSelectedIndex')).toEqual(2);
   });
-  it('does not soft select out of its range', () => {
+  it('does not soft-select out of its range', () => {
     const ev = { key: 'ArrowDown', preventDefault: () => {} };
     let menu = shallow(<LookupMenu items={items} />);
     let input = menu.find(Input);
