@@ -1,10 +1,8 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import 'jest-styled-components';
-import renderer from 'react-test-renderer';
 
-import { withTheme, mountWithTheme } from '../../utils/theme';
-import theme from '../../theme';
+import { withTheme } from '../../utils/theme';
 
 import { LookupMenu } from './LookupMenu';
 import Input from '../Input';
